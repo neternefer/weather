@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        
+        <div class="nav">
+
+
+            <label for="show-menu" class="show-menu">Show Menu</label>
+            <input type="checkbox" id="show-menu">
+            <ul class="navigation">
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">New York</a></li>
+                <li><a href="#">Berlin</a></li>
+                <li><a href="#">Warsaw</a></li>
+                <li><a href="#">Moscow</a></li>
+            </ul>
+        </div>
+
+        <section class="todayWeather">
+            <h1>Weather</h1>
+            <div class="wrapper"></div>
+            <div class="wrapperContent">
+                <!--Current date-->
+                <p></p>
+                <!--City name-->
+                <p></p>
+                <div class="img"><img src="" id="image" /></div>
+                <!--Temperature-->
+                <p></p>
+                <!--Description-->
+                <p></p>
+            </div>
+        </section>
+        <section class="fiveDaysWeather">
+            <div class="firstDay">
+                <p class="dayName"></p>
+                <div class="picture">
+                  <img class="icon" src="" />
+                </div>
+                <p class="degrees"></p>
+            </div>
+
+            <div class="secondDay">
+                <p class="dayName"></p>
+                <div class="picture">
+                  <img class="icon" src="" />
+                </div>
+                <p class="degrees"></p>
+            </div>
+            <div class="thirdDay">
+                <p class="dayName"></p>
+                <div class="picture">
+                  <img class="icon" src="" />
+                </div>
+                <p class="degrees"></p>
+            </div>
+            <div class="fourthDay">
+                <p class="dayName"></p>
+                <div class="picture">
+                  <img class="icon" src="" />
+                </div>
+                <p class="degrees"></p>
+            </div>
+            <div class="fifthDay">
+                <p class="dayName"></p>
+                <div class="picture">
+                  <img class="icon" src="" />
+                </div>
+                <p class="degrees"></p>
+            </div>
+
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
