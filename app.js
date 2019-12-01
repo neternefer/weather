@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
- ////5 days weather forecast
+   ////5 days weather forecast
   async function getWeatherForNextDays(city) {
     let url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
     const response = await fetch(url);
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const dailyWeather = weather.list.filter(element => {
       return (
         new Date(element.dt * 1000).getDate() !== today &&
-        element.dt_txt.includes("15:00:00")
+        element.dt_txt.includes("12:00:00")
       );
     });
 
