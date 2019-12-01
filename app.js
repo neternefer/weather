@@ -95,9 +95,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  ////5 days weather forecast
+ ////5 days weather forecast
   async function getWeatherForNextDays(city) {
-    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
+    let url = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
     const response = await fetch(url);
     const weather = await response.json();
     const today = new Date().getDate();
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function() {
       dayNames[i].innerHTML = days[date.getDay()];
       icons[
         i
-      ].src = `https://openweathermap.org/img/wn/${dailyWeather[i].weather[0].icon}@2x.png`;
+      ].src = `http://openweathermap.org/img/wn/${dailyWeather[i].weather[0].icon}@2x.png`;
     }
 
     const setLastDay = () => {
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
         Math.round(weather.list[weather.list.length - 1].main.temp) + "&deg C";
       const date = new Date(weather.list[weather.list.length - 1].dt * 1000);
       dayNames[4].innerHTML = days[date.getDay()];
-      icons[4].src = `https://openweathermap.org/img/wn/${
+      icons[4].src = `http://openweathermap.org/img/wn/${
         weather.list[weather.list.length - 1].weather[0].icon
       }@2x.png`;
     };
