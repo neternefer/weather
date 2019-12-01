@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   const getNextFiveDays = function(startDate, daysNum) {
     //Returns an array with daysNum number of days from startDate
-    var xDays = [];
-    for (var i = 0; i <= daysNum; i++) {
-      var currentDate = new Date();
+    let xDays = [];
+    for (let i = 0; i <= daysNum; i++) {
+      let currentDate = new Date();
       currentDate.setDate(startDate.getDate() + i);
       xDays.push(getFullDay(currentDate));
     }
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const dates = {
     weekDay: getNextFiveDays()[0],
     day: today.getDate(),
-    month: today.getMonth(),
+    month: today.getMonth() + 1,
     year: today.getFullYear(),
     nextFiveDays: getNextFiveDays(today, 5)
   };
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
     cityHtml.innerHTML = city;
     //Insert date info into html
     currentDateHtml.innerHTML = `${dates.day}.${dates.month}.${dates.year}`;
-    for (var i = 0; i <= 6; i++) {
+    for (let i = 0; i <= 6; i++) {
       if (futureWeatherHtml[i]) {
         futureWeatherHtml[i].innerHTML = dates.nextFiveDays[i + 1];
       }
