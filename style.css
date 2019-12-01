@@ -5,41 +5,6 @@
     font-size: 10px;
 }
 
-
-/* input {
-    margin-left: 2rem;
-    position: absolute;
-    top: 2rem;
-    font-size: 2rem;
-    border-radius: 30px;
-    text-align: center;
-} */
-
-
-/* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 2rem 3rem;
-    text-decoration: none;
-    font-size: 2rem;
-    font-family: 'Arimo', sans-serif;
-}
-
-li a:hover {
-    background-color: #111;
-} */
-
 input[type=checkbox],
 .show-menu {
     display: none;
@@ -52,16 +17,10 @@ input[type=checkbox],
     font-family: helvetica;
 }
 
-
-/*styling navigation*/
-
 .navigation {
     display: flex;
     list-style-type: none;
 }
-
-
-/*styling list items->li in navigation*/
 
 .navigation li {
     background: #1a1a1a;
@@ -70,23 +29,14 @@ input[type=checkbox],
     transition: all .2s ease;
 }
 
-
-/*giving border left to all list items, but not to our first list item*/
-
 .navigation li:not(:first-child) {
     border-left: 2px solid #ecf0f1;
 }
-
-
-/*styling hover*/
 
 .navigation li:hover {
     background: #333333;
     flex: 1.1;
 }
-
-
-/*styling our anchor tag*/
 
 .navigation li a {
     display: block;
@@ -162,8 +112,6 @@ div .img {
 .fiveDaysWeather {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    /* margin-left: 5rem;
-    margin-right: 5rem; */
     background-color: #fff;
     opacity: 0.8;
     width: 100%;
@@ -198,63 +146,22 @@ div .img {
     .show-menu {
         display: none;
     }
-    .nav {
-        /* max-width: 960px;
-        margin: 0 auto;
-        color: #ecf0f1;
-        font-family: helvetica; */
-    }
-    /*styling navigation*/
-    .navigation {
-        /* display: flex;
-        list-style-type: none; */
-    }
-    /*styling list items->li in navigation*/
-    .navigation li {
-        /* background: #1a1a1a;
-        flex: 1;
-        text-align: center; */
-        /* transition: all .2s ease; */
-    }
-    /*giving border left to all list items, but not to our first list item*/
-    .navigation li:not(:first-child) {
-        /* border-left: 2px solid #ecf0f1; */
-    }
-    /*styling hover*/
     .navigation li:hover {
         background: black;
         flex: 1
     }
-    /*styling our anchor tag*/
     .navigation li a {
-        /* display: block; */
         padding: 15px 0;
-        /* color: inherit; */
         font-size: 3.5rem;
-        /* text-decoration: none; */
-    }
-    main {
-        /* width: 100%;
-        height: 100vh;
-        background-image: url(img/starry-sky-2051448_1920.jpg);
-        background-size: cover;
-        background-position: top center;
-        background-repeat: no-repeat; */
     }
     .todayWeather {
         height: 60vh;
     }
     .todayWeather h1 {
-        /* font-family: 'Arimo', sans-serif;
-        padding-top: 5rem; */
         padding-bottom: 4rem;
-        /* color: white;
-        font-size: 5rem;
-        text-align: center; */
     }
     .wrapper {
         margin: 0 auto;
-        /* width: 50rem; */
         height: 50rem;
         background-color: white;
         opacity: 0.8;
@@ -275,12 +182,7 @@ div .img {
         padding-bottom: 1rem;
     }
     .wrapperContent p {
-        /* font-family: 'Arimo', sans-serif;
-        margin-top: 2rem;
-        text-align: center; */
         font-size: 4.5rem;
-        /* color: black;
-        font-weight: bold */
     }
     div .img {
         display: flex;
@@ -313,93 +215,29 @@ div .img {
 }
 
 @media screen and (max-width:1024px) and (max-height:976px) {
-    input[type=checkbox],
-    .show-menu {
-        display: none;
-    }
-    .nav {
-        /* max-width: 960px;
-        margin: 0 auto;
-        color: #ecf0f1;
-        font-family: helvetica; */
-    }
-    /*styling navigation*/
-    .navigation {
-        /* display: flex;
-        list-style-type: none; */
-    }
-    /*styling list items->li in navigation*/
-    .navigation li {
-        /* background: #1a1a1a;
-        flex: 1;
-        text-align: center; */
-        /* transition: all .2s ease; */
-    }
-    /*giving border left to all list items, but not to our first list item*/
-    .navigation li:not(:first-child) {
-        /* border-left: 2px solid #ecf0f1; */
-    }
-    /*styling hover*/
-    .navigation li:hover {
-        background: black;
-        flex: 1
-    }
-    /*styling our anchor tag*/
     .navigation li a {
-        /* display: block; */
         padding: 15px 0;
-        /* color: inherit; */
         font-size: 1.75rem;
-        /* text-decoration: none; */
-    }
-    main {
-        /* width: 100%;
-        height: 100vh;
-        background-image: url(img/starry-sky-2051448_1920.jpg);
-        background-size: cover;
-        background-position: top center;
-        background-repeat: no-repeat; */
     }
     .todayWeather {
         height: 70vh;
     }
     .todayWeather h1 {
-        /* font-family: 'Arimo', sans-serif; */
         padding-top: 3.5rem;
         padding-bottom: 4rem;
-        /* color: white; */
         font-size: 5rem;
-        /* text-align: center; */
     }
     .wrapper {
-        /* margin: 0 auto; */
-        /* width: 50rem; */
         height: 40rem;
-        /* background-color: white;
-        opacity: 0.8;
-        border-radius: 20px;
-        position: relative; */
     }
     .wrapperContent {
-        /* position: relative; */
         top: -39rem;
-    }
-    .wrapperContent p:nth-child(1) {
-        /* padding-top: 1rem; */
     }
     .wrapperContent p:nth-child(4) {
         font-size: 6rem;
     }
-    .wrapperContent p:nth-child(5) {
-        /* padding-bottom: 1rem; */
-    }
     .wrapperContent p {
-        /* font-family: 'Arimo', sans-serif;
-        margin-top: 2rem;
-        text-align: center; */
         font-size: 3.5rem;
-        /* color: black;
-        font-weight: bold */
     }
     div .img {
         display: flex;
@@ -419,57 +257,21 @@ div .img {
         height: 4rem;
     }
     .fiveDaysWeather p {
-        /* font-family: 'Arimo', sans-serif;
-        font-weight: bold;
-        color: black; */
         font-size: 2.75rem;
     }
     .fiveDaysWeather .degrees {
         font-size: 4.5rem;
-        /* display: flex;
-        justify-content: center; */
     }
 }
 
 @media screen and (max-height:800px) {
-    input[type=checkbox],
-    .show-menu {
-        display: none;
-    }
-    .nav {
-        /* max-width: 960px;
-        margin: 0 auto;
-        color: #ecf0f1;
-        font-family: helvetica; */
-    }
-    /*styling navigation*/
-    .navigation {
-        /* display: flex;
-        list-style-type: none; */
-    }
-    /*styling list items->li in navigation*/
-    .navigation li {
-        /* background: #1a1a1a;
-        flex: 1;
-        text-align: center; */
-        /* transition: all .2s ease; */
-    }
-    /*giving border left to all list items, but not to our first list item*/
-    .navigation li:not(:first-child) {
-        /* border-left: 2px solid #ecf0f1; */
-    }
-    /*styling hover*/
     .navigation li:hover {
         background: #333333;
         flex: 1.1;
     }
-    /*styling our anchor tag*/
     .navigation li a {
-        /* display: block; */
         padding: 10px 0;
-        /* color: inherit; */
         font-size: 3rem;
-        /* text-decoration: none; */
     }
     main {
         width: 100%;
@@ -483,28 +285,14 @@ div .img {
         height: 65vh;
     }
     .todayWeather h1 {
-        /* font-family: 'Arimo', sans-serif; */
         padding-top: 3rem;
-        /* padding-bottom: 4rem; */
-        /* color: white;
-        font-size: 5rem;
-        text-align: center; */
     }
     .wrapper {
         margin: 0 auto;
-        /* width: 50rem; */
         height: 35rem;
-        /* background-color: white;
-        opacity: 0.8;
-        border-radius: 20px;
-        position: relative; */
     }
     .wrapperContent {
-        /* position: relative; */
         top: -34rem;
-    }
-    .wrapperContent p:nth-child(1) {
-        /* padding-top: 1rem; */
     }
     .wrapperContent p:nth-child(4) {
         font-size: 6rem;
@@ -517,8 +305,6 @@ div .img {
         margin-top: 0;
         text-align: center;
         font-size: 3rem;
-        /* color: black;
-        font-weight: bold */
     }
     div .img {
         display: flex;
@@ -528,11 +314,6 @@ div .img {
         margin-top: 2.5rem;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
-        /* background-color: #fff;
-        opacity: 0.8;
-        width: 100%;
-        display: flex;
-        justify-content: space-around; */
     }
     .picture {
         color: red;
@@ -556,40 +337,13 @@ div .img {
     .show-menu {
         display: none;
     }
-    .nav {
-        /* max-width: 960px;
-        margin: 0 auto;
-        color: #ecf0f1;
-        font-family: helvetica; */
-    }
-    /*styling navigation*/
-    .navigation {
-        /* display: flex;
-        list-style-type: none; */
-    }
-    /*styling list items->li in navigation*/
-    .navigation li {
-        /* background: #1a1a1a;
-        flex: 1;
-        text-align: center; */
-        /* transition: all .2s ease; */
-    }
-    /*giving border left to all list items, but not to our first list item*/
-    .navigation li:not(:first-child) {
-        /* border-left: 2px solid #ecf0f1; */
-    }
-    /*styling hover*/
     .navigation li:hover {
         background: #333333;
         flex: 1.1;
     }
-    /*styling our anchor tag*/
     .navigation li a {
-        /* display: block; */
         padding: 10px 0;
-        /* color: inherit; */
         font-size: 2.5rem;
-        /* text-decoration: none; */
     }
     main {
         width: 100%;
@@ -603,28 +357,14 @@ div .img {
         height: 65vh;
     }
     .todayWeather h1 {
-        /* font-family: 'Arimo', sans-serif; */
         padding-top: 2.5rem;
-        /* padding-bottom: 4rem; */
-        /* color: white;
-        font-size: 5rem;
-        text-align: center; */
     }
     .wrapper {
         margin: 0 auto;
-        /* width: 50rem; */
         height: 30rem;
-        /* background-color: white;
-        opacity: 0.8;
-        border-radius: 20px;
-        position: relative; */
     }
     .wrapperContent {
-        /* position: relative; */
         top: -29rem;
-    }
-    .wrapperContent p:nth-child(1) {
-        /* padding-top: 1rem; */
     }
     .wrapperContent p:nth-child(4) {
         font-size: 5rem;
@@ -633,12 +373,9 @@ div .img {
         padding-bottom: 0;
     }
     .wrapperContent p {
-        /* font-family: 'Arimo', sans-serif; */
         margin-top: 0;
         text-align: center;
         font-size: 2.5rem;
-        /* color: black;
-        font-weight: bold */
     }
     div .img {
         display: flex;
@@ -648,11 +385,6 @@ div .img {
         margin-top: 2.5rem;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
-        /* background-color: #fff;
-        opacity: 0.8;
-        width: 100%;
-        display: flex;
-        justify-content: space-around; */
     }
     .picture {
         color: red;
@@ -676,40 +408,13 @@ div .img {
     .show-menu {
         display: none;
     }
-    .nav {
-        /* max-width: 960px;
-        margin: 0 auto;
-        color: #ecf0f1;
-        font-family: helvetica; */
-    }
-    /*styling navigation*/
-    .navigation {
-        /* display: flex;
-        list-style-type: none; */
-    }
-    /*styling list items->li in navigation*/
-    .navigation li {
-        /* background: #1a1a1a;
-        flex: 1;
-        text-align: center; */
-        /* transition: all .2s ease; */
-    }
-    /*giving border left to all list items, but not to our first list item*/
-    .navigation li:not(:first-child) {
-        /* border-left: 2px solid #ecf0f1; */
-    }
-    /*styling hover*/
     .navigation li:hover {
         background: black;
         flex: 1
     }
-    /*styling our anchor tag*/
     .navigation li a {
-        /* display: block; */
         padding: 15px 0;
-        /* color: inherit; */
         font-size: 1.75rem;
-        /* text-decoration: none; */
     }
     main {
         width: 100%;
@@ -723,42 +428,21 @@ div .img {
         height: 70vh;
     }
     .todayWeather h1 {
-        /* font-family: 'Arimo', sans-serif; */
         padding-top: 3.5rem;
         padding-bottom: 4rem;
-        /* color: white; */
         font-size: 5rem;
-        /* text-align: center; */
     }
     .wrapper {
-        /* margin: 0 auto; */
-        /* width: 50rem; */
         height: 40rem;
-        /* background-color: white;
-        opacity: 0.8;
-        border-radius: 20px;
-        position: relative; */
     }
     .wrapperContent {
-        /* position: relative; */
         top: -39rem;
-    }
-    .wrapperContent p:nth-child(1) {
-        /* padding-top: 1rem; */
     }
     .wrapperContent p:nth-child(4) {
         font-size: 6rem;
     }
-    .wrapperContent p:nth-child(5) {
-        /* padding-bottom: 1rem; */
-    }
     .wrapperContent p {
-        /* font-family: 'Arimo', sans-serif;
-        margin-top: 2rem;
-        text-align: center; */
         font-size: 3.5rem;
-        /* color: black;
-        font-weight: bold */
     }
     div .img {
         display: flex;
@@ -766,28 +450,16 @@ div .img {
     }
     .fiveDaysWeather {
         margin-top: 12rem;
-        /* padding-top: 2rem;
-        padding-bottom: 2rem;
-        background-color: #fff;
-        opacity: 0.8;
-        width: 100%;
-        display: flex;
-        justify-content: space-around; */
     }
     .picture {
         color: red;
         height: 4rem;
     }
     .fiveDaysWeather p {
-        /* font-family: 'Arimo', sans-serif;
-        font-weight: bold;
-        color: black; */
         font-size: 2.75rem;
     }
     .fiveDaysWeather .degrees {
         font-size: 4.5rem;
-        /* display: flex;
-        justify-content: center; */
     }
 }
 
@@ -796,89 +468,27 @@ div .img {
     .show-menu {
         display: none;
     }
-    .nav {
-        /* max-width: 960px;
-        margin: 0 auto;
-        color: #ecf0f1;
-        font-family: helvetica; */
-    }
-    /*styling navigation*/
-    .navigation {
-        /* display: flex;
-        list-style-type: none; */
-    }
-    /*styling list items->li in navigation*/
-    .navigation li {
-        /* background: #1a1a1a;
-        flex: 1;
-        text-align: center;
-        transition: all .2s ease; */
-    }
-    /*giving border left to all list items, but not to our first list item*/
-    .navigation li:not(:first-child) {
-        /* border-left: 2px solid #ecf0f1; */
-    }
-    /*styling hover*/
-    .navigation li:hover {
-        /* background: #333333;
-        flex: 1.1; */
-    }
-    /*styling our anchor tag*/
     .navigation li a {
-        /* display: block; */
         padding: 15px 0;
-        /* color: inherit; */
         font-size: 1.75rem;
-        /* text-decoration: none; */
-    }
-    main {
-        /* width: 100%;
-        height: 100vh;
-        background-image: url(img/starry-sky-2051448_1920.jpg);
-        background-size: cover;
-        background-position: top center;
-        background-repeat: no-repeat; */
     }
     .todayWeather {
         height: 60vh;
     }
     .todayWeather h1 {
-        /* font-family: 'Arimo', sans-serif; */
-        /* padding-top: 5rem;
-        padding-bottom: 3rem;
-        color: white; */
         font-size: 4rem;
-        /* text-align: center; */
     }
     .wrapper {
-        /* margin: 0 auto;
-        width: 50rem; */
         height: 35rem;
-        /* background-color: white;
-        opacity: 0.8;
-        border-radius: 20px;
-        position: relative; */
     }
     .wrapperContent {
-        /* position: relative; */
         top: -34rem;
     }
-    /* .wrapperContent p:nth-child(1) {
-        padding-top: 1rem;
-    } */
     .wrapperContent p:nth-child(4) {
         font-size: 5rem;
     }
-    /* .wrapperContent p:nth-child(5) {
-        padding-bottom: 1rem;
-    } */
     .wrapperContent p {
-        /* font-family: 'Arimo', sans-serif;
-        margin-top: 2rem;
-        text-align: center; */
         font-size: 2.5rem;
-        /* color: black;
-        font-weight: bold */
     }
     div .img {
         display: flex;
@@ -887,8 +497,6 @@ div .img {
     .fiveDaysWeather {
         padding-top: 2rem;
         padding-bottom: 2rem;
-        /* margin-left: 5rem;
-        margin-right: 5rem; */
         background-color: #fff;
         opacity: 0.8;
         width: 100%;
@@ -913,11 +521,7 @@ div .img {
     }
 }
 
-
-/*giving style for mobile*/
-
 @media screen and (max-width:600px) {
-    /*styling our show menu button*/
     .show-menu {
         background: #342a2a;
         display: flex;
@@ -926,26 +530,21 @@ div .img {
         justify-content: center;
         font-size: 1.75rem;
     }
-    /*hiding our navigation*/
     .navigation {
         display: none;
         position: absolute;
         z-index: 100;
         width: 100%;
     }
-    /*displaying our list items as block element; if checkbox is check*/
     input[type=checkbox]:checked~.navigation {
         display: block;
     }
-    /*removing border left from the pseudo class*/
     .navigation li:not(:first-child) {
         border: 0;
     }
-    /*giving margin to list item, excluding last list item*/
     .navigation li:not(:last-child) {
         margin: 2px 0;
     }
-    /*styling hover*/
     .navigation li:hover {
         background: #1a1a1a;
         flex: 1;
@@ -962,42 +561,23 @@ div .img {
         height: 55vh;
     }
     .todayWeather h1 {
-        /* font-family: 'Arimo', sans-serif; */
         padding-top: 3rem;
-        /* padding-bottom: 3rem; */
         color: white;
         font-size: 5rem;
         text-align: center;
     }
     .wrapper {
-        /* margin: 0 auto; */
         width: 40rem;
         height: 32rem;
-        /* background-color: white;
-        opacity: 0.8;
-        border-radius: 20px;
-        position: relative; */
     }
     .wrapperContent {
-        /* position: relative; */
         top: -32.5rem;
     }
-    /* .wrapperContent p:nth-child(1) {
-        padding-top: 1rem;
-    } */
-    /* .wrapperContent p:nth-child(4) {
-        font-size: 4rem;
-    } */
     .wrapperContent p:nth-child(5) {
         padding-bottom: 1rem;
     }
     .wrapperContent p {
-        /* font-family: 'Arimo', sans-serif;
-        margin-top: 2rem;
-        text-align: center; */
         font-size: 2.5rem;
-        /* color: black;
-        font-weight: bold */
     }
     div .img {
         display: flex;
@@ -1006,8 +586,6 @@ div .img {
     .fiveDaysWeather {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
-        /* margin-left: 5rem;
-        margin-right: 5rem; */
         background-color: #fff;
         opacity: 0.8;
         width: 100%;
@@ -1019,9 +597,6 @@ div .img {
         height: 4rem;
     }
     .fiveDaysWeather p {
-        /* font-family: 'Arimo', sans-serif;
-        font-weight: bold;
-        color: black; */
         font-size: 2rem;
     }
     .fiveDaysWeather .degrees {
@@ -1032,7 +607,6 @@ div .img {
 }
 
 @media screen and (max-width:700px) and (max-height:770px) {
-    /*styling our show menu button*/
     .show-menu {
         background: #342a2a;
         display: flex;
@@ -1041,26 +615,21 @@ div .img {
         justify-content: center;
         font-size: 1.75rem;
     }
-    /*hiding our navigation*/
     .navigation {
         display: none;
         position: absolute;
         z-index: 100;
         width: 100%;
     }
-    /*displaying our list items as block element; if checkbox is check*/
     input[type=checkbox]:checked~.navigation {
         display: block;
     }
-    /*removing border left from the pseudo class*/
     .navigation li:not(:first-child) {
         border: 0;
     }
-    /*giving margin to list item, excluding last list item*/
     .navigation li:not(:last-child) {
         margin: 2px 0;
     }
-    /*styling hover*/
     .navigation li:hover {
         background: #1a1a1a;
         flex: 1;
@@ -1077,42 +646,23 @@ div .img {
         height: 60vh;
     }
     .todayWeather h1 {
-        /* font-family: 'Arimo', sans-serif; */
         padding-top: 3rem;
-        /* padding-bottom: 3rem; */
         color: white;
         font-size: 5rem;
         text-align: center;
     }
     .wrapper {
-        /* margin: 0 auto; */
         width: 40rem;
         height: 32rem;
-        /* background-color: white;
-        opacity: 0.8;
-        border-radius: 20px;
-        position: relative; */
     }
     .wrapperContent {
-        /* position: relative; */
         top: -30rem;
     }
-    /* .wrapperContent p:nth-child(1) {
-        padding-top: 1rem;
-    } */
-    /* .wrapperContent p:nth-child(4) {
-        font-size: 4rem;
-    } */
     .wrapperContent p:nth-child(5) {
         padding-bottom: 1rem;
     }
     .wrapperContent p {
-        /* font-family: 'Arimo', sans-serif;
-        margin-top: 2rem;
-        text-align: center; */
         font-size: 2.5rem;
-        /* color: black;
-        font-weight: bold */
     }
     div .img {
         display: flex;
@@ -1121,22 +671,12 @@ div .img {
     .fiveDaysWeather {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
-        /* margin-left: 5rem;
-        margin-right: 5rem; */
-        /* background-color: #fff;
-        opacity: 0.8;
-        width: 100%;
-        display: flex;
-        justify-content: space-around; */
     }
     .picture {
         color: red;
         height: 4rem;
     }
     .fiveDaysWeather p {
-        /* font-family: 'Arimo', sans-serif;
-        font-weight: bold;
-        color: black; */
         font-size: 2rem;
     }
     .fiveDaysWeather .degrees {
@@ -1147,7 +687,6 @@ div .img {
 }
 
 @media screen and (max-width:560px) {
-    /*styling our show menu button*/
     .show-menu {
         background: #342a2a;
         display: flex;
@@ -1156,7 +695,6 @@ div .img {
         justify-content: center;
         font-size: 2rem;
     }
-    /*hiding our navigation*/
     .navigation {
         display: none;
         position: absolute;
@@ -1164,25 +702,17 @@ div .img {
         width: 100%
     }
     .navigation li a {
-        /* display: block;
-        padding: 20px 0;
-        color: inherit; */
         font-size: 2rem;
-        /* text-decoration: none; */
     }
-    /*displaying our list items as block element; if checkbox is check*/
     input[type=checkbox]:checked~.navigation {
         display: block;
     }
-    /*removing border left from the pseudo class*/
     .navigation li:not(:first-child) {
         border: 0;
     }
-    /*giving margin to list item, excluding last list item*/
     .navigation li:not(:last-child) {
         margin: 2px 0;
     }
-    /*styling hover*/
     .navigation li:hover {
         background: #1a1a1a;
         flex: 1;
@@ -1199,24 +729,15 @@ div .img {
         height: 45vh;
     }
     .todayWeather h1 {
-        /* font-family: 'Arimo', sans-serif; */
         padding-top: 2rem;
         padding-bottom: 2rem;
-        /* color: white; */
         font-size: 3rem;
-        /* text-align: center; */
     }
     .wrapper {
-        /* margin: 0 auto; */
         width: 30rem;
         height: 25rem;
-        /* background-color: white;
-        opacity: 0.8;
-        border-radius: 20px;
-        position: relative; */
     }
     .wrapperContent {
-        /* position: relative; */
         top: -23rem;
     }
     .wrapperContent p:nth-child(1) {
@@ -1229,12 +750,8 @@ div .img {
         padding-bottom: 0;
     }
     .wrapperContent p {
-        /* font-family: 'Arimo', sans-serif; */
         margin-top: 0;
-        /* text-align: center; */
         font-size: 2.5rem;
-        /* color: black;
-        font-weight: bold */
     }
     div .img {
         display: flex;
@@ -1271,9 +788,6 @@ div .img {
         height: 4rem;
     }
     .fiveDaysWeather p {
-        /* font-family: 'Arimo', sans-serif;
-        font-weight: bold;
-        color: black; */
         font-size: 2rem;
     }
     .fiveDaysWeather .degrees {
@@ -1284,7 +798,6 @@ div .img {
 }
 
 @media screen and (max-width:360px) {
-    /*styling our show menu button*/
     .show-menu {
         background: #342a2a;
         display: flex;
@@ -1293,7 +806,6 @@ div .img {
         justify-content: center;
         font-size: 1.25rem;
     }
-    /*hiding our navigation*/
     .navigation {
         display: none;
         position: absolute;
@@ -1301,59 +813,37 @@ div .img {
         width: 100%
     }
     .navigation li a {
-        /* display: block;
-        padding: 20px 0;
-        color: inherit; */
         font-size: 1.25rem;
-        /* text-decoration: none; */
     }
-    /*displaying our list items as block element; if checkbox is check*/
     input[type=checkbox]:checked~.navigation {
         display: block;
     }
-    /*removing border left from the pseudo class*/
     .navigation li:not(:first-child) {
         border: 0;
     }
-    /*giving margin to list item, excluding last list item*/
     .navigation li:not(:last-child) {
         margin: 2px 0;
     }
-    /*styling hover*/
     .navigation li:hover {
         background: #1a1a1a;
         flex: 1;
     }
     main {
-        /* width: 100%; */
         height: 100vh;
-        /* background-image: url(img/starry-sky-2051448_1920.jpg);
-        background-size: cover;
-        background-position: top center;
-        background-repeat: no-repeat; */
     }
     .todayWeather {
         height: 40vh;
     }
     .todayWeather h1 {
-        /* font-family: 'Arimo', sans-serif; */
         padding-top: 1rem;
         padding-bottom: 1rem;
-        /* color: white; */
         font-size: 2.5rem;
-        /* text-align: center; */
     }
     .wrapper {
-        /* margin: 0 auto; */
         width: 30rem;
         height: 20rem;
-        /* background-color: white;
-        opacity: 0.8;
-        border-radius: 20px;
-        position: relative; */
     }
     .wrapperContent {
-        /* position: relative; */
         top: -20rem;
     }
     .wrapperContent p:nth-child(1) {
@@ -1366,12 +856,7 @@ div .img {
         padding-bottom: 0;
     }
     .wrapperContent p {
-        /* font-family: 'Arimo', sans-serif; */
-        /* margin-top: 0; */
-        /* text-align: center; */
         font-size: 1.5rem;
-        /* color: black;
-        font-weight: bold */
     }
     div .img {
         display: flex;
@@ -1408,9 +893,6 @@ div .img {
         height: 0;
     }
     .fiveDaysWeather p {
-        /* font-family: 'Arimo', sans-serif;
-        font-weight: bold;
-        color: black; */
         font-size: 1.5rem;
     }
     .fiveDaysWeather .degrees {
@@ -1421,46 +903,6 @@ div .img {
 }
 
 @media screen and (max-width:320px) {
-    /*styling our show menu button*/
-    .show-menu {
-        background: #342a2a;
-        display: flex;
-        cursor: pointer;
-        padding: 10px 0;
-        justify-content: center;
-        font-size: 1.25rem;
-    }
-    /*hiding our navigation*/
-    .navigation {
-        display: none;
-        position: absolute;
-        z-index: 100;
-        width: 100%
-    }
-    .navigation li a {
-        /* display: block;
-        padding: 20px 0;
-        color: inherit; */
-        font-size: 1.25rem;
-        /* text-decoration: none; */
-    }
-    /*displaying our list items as block element; if checkbox is check*/
-    input[type=checkbox]:checked~.navigation {
-        display: block;
-    }
-    /*removing border left from the pseudo class*/
-    .navigation li:not(:first-child) {
-        border: 0;
-    }
-    /*giving margin to list item, excluding last list item*/
-    .navigation li:not(:last-child) {
-        margin: 2px 0;
-    }
-    /*styling hover*/
-    .navigation li:hover {
-        background: #1a1a1a;
-        flex: 1;
-    }
     main {
         width: 100%;
         height: 120vh;
@@ -1473,24 +915,15 @@ div .img {
         height: 45vh;
     }
     .todayWeather h1 {
-        /* font-family: 'Arimo', sans-serif; */
         padding-top: 1rem;
         padding-bottom: 1rem;
-        /* color: white; */
         font-size: 2.5rem;
-        /* text-align: center; */
     }
     .wrapper {
-        /* margin: 0 auto; */
         width: 20rem;
         height: 20rem;
-        /* background-color: white;
-        opacity: 0.8;
-        border-radius: 20px;
-        position: relative; */
     }
     .wrapperContent {
-        /* position: relative; */
         top: -20rem;
     }
     .wrapperContent p:nth-child(1) {
@@ -1503,12 +936,7 @@ div .img {
         padding-bottom: 0;
     }
     .wrapperContent p {
-        /* font-family: 'Arimo', sans-serif; */
-        /* margin-top: 0; */
-        /* text-align: center; */
         font-size: 1.5rem;
-        /* color: black;
-        font-weight: bold */
     }
     div .img {
         display: flex;
@@ -1545,9 +973,6 @@ div .img {
         height: 0;
     }
     .fiveDaysWeather p {
-        /* font-family: 'Arimo', sans-serif;
-        font-weight: bold;
-        color: black; */
         font-size: 1.5rem;
     }
     .fiveDaysWeather .degrees {
